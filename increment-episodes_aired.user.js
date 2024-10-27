@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Shikimori add episode button
+// @name         Shikimori increment episodes_aired button
 // @namespace    http://tampermonkey.net/
 // @version      2024-10-27
 // @description  Добавляет кнопку увеличения числа вышедших эпизодов
@@ -29,17 +29,18 @@
         $(`
           <a
             href="${$container.find('a.edit').attr('href').replace('/edit', '/increment_episode')}"
-            class="b-subposter-action edit-alt plus b-tooltipped unprocessed"
+            class="b-subposter-action increment-episodes_aired b-tooltipped unprocessed"
             title="Увеличить Эпизодов вышло"
             data-direction="top"
             data-userscript="increment-episodes_aired"
             data-confirm="Увеличить?"
             data-method="post"
+            style='font-size: 24px; font-weight: bold; line-height: 1;'
           >
+            +
           </a>
         `)
             .appendTo($container)
             .process();
     }
-
 })();
