@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         shikimori.one edit external_links button
+// @name         Shikimori edit external_links button
 // @namespace    http://tampermonkey.net/
 // @version      2024-10-27
 // @description  Добавляет кнопку быстрого перехода на редактирование ссылок
