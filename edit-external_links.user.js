@@ -25,9 +25,15 @@
         const $container = $('.b-subposter-actions');
         if (!$container.length) { return; }
 
-        $('.b-subposter-action[data-custom="external_links"]').remove();
+        $('.b-subposter-action[data-userscript="external_links"]').remove();
         $(`
-          <a class="b-subposter-action edit-alt b-tooltipped unprocessed" data-custom="external_links" title="Ссылки" href="${$container.find('a.edit').attr('href')}/external_links" data-direction="top">
+          <a
+            href="${$container.find('a.edit').attr('href')}/external_links"
+            class="b-subposter-action edit-alt b-tooltipped unprocessed"
+            title="Ссылки"
+            data-direction="top"
+            data-userscript="external_links"
+          >
           </a>
         `)
             .appendTo($container)

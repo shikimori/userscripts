@@ -25,9 +25,15 @@
         const $container = $('.b-subposter-actions');
         if (!$container.length) { return; }
 
-        $('.b-subposter-action[data-custom="poster"]').remove();
+        $('.b-subposter-action[data-userscript="poster"]').remove();
         $(`
-          <a class="b-subposter-action edit-alt b-tooltipped unprocessed" data-custom="poster" title="Постер" href="${$container.find('a.edit').attr('href')}/poster" data-direction="top">
+          <a
+            href="${$container.find('a.edit').attr('href')}/poster"
+            class="b-subposter-action edit-alt b-tooltipped unprocessed"
+            title="Постер"
+            data-direction="top"
+            data-userscript="poster"
+          >
           </a>
         `)
             .appendTo($container)

@@ -25,9 +25,15 @@
         const $container = $('.b-subposter-actions');
         if (!$container.length) { return; }
 
-        $('.b-subposter-action[data-custom="fandubbers"]').remove();
+        $('.b-subposter-action[data-userscript="fandubbers"]').remove();
         $(`
-          <a class="b-subposter-action edit-alt b-tooltipped unprocessed" data-custom="fandubbers" title="Озвучка" href="${$container.find('a.edit').attr('href')}/fandubbers" data-direction="top">
+          <a
+            href="${$container.find('a.edit').attr('href')}/fandubbers"
+            class="b-subposter-action edit-alt b-tooltipped unprocessed"
+            title="Озвучка"
+            data-userscript="fandubbers"
+            data-direction="top"
+          >
           </a>
         `)
             .appendTo($container)
