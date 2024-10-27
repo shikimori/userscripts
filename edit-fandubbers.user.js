@@ -7,7 +7,7 @@
 // @match        *://shikimori.local/*
 // @match        *://shikimori.one/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=shikimori.one
-// @downloadURL  https://github.com/shikimori/userscripts/raw/refs/heads/master/edit-fandubbers.user.js
+// @downloadURL  https://github.com/shikimori/userscripts/blob/master/edit-fandubbers.user.js
 // @updateURL    https://github.com/shikimori/userscripts/raw/refs/heads/master/edit-fandubbers.user.js
 // @grant        none
 // ==/UserScript==
