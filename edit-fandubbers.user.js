@@ -21,6 +21,7 @@
 
     function ready() {
         if (!window.location.pathname.startsWith('/animes/')) { return; }
+
         const $container = $('.b-subposter-actions');
         if (!$container.length) { return; }
 

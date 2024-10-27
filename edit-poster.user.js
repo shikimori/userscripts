@@ -20,6 +20,8 @@
     ready();
 
     function ready() {
+        if (!window.location.pathname.startsWith('/animes/') && !window.location.pathname.startsWith('/mangas/') && !window.location.pathname.startsWith('/ranobe/')) { return; }
+
         const $container = $('.b-subposter-actions');
         if (!$container.length) { return; }
 
