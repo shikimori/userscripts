@@ -20,7 +20,7 @@
     ready();
 
     function ready() {
-        if (!window.location.pathname.match(/\/(?:animes|mangas|ranobe|characters|people)\//')) { return; }
+        if (!window.location.pathname.match(/\/(?:animes|mangas|ranobe|characters|people)\//)) { return; }
 
         const $container = $('.b-subposter-actions');
         if (!$container.length) { return; }
